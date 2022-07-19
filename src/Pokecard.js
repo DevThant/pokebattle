@@ -6,11 +6,15 @@ class Pokecard extends Component {
     const { pokemon } = this.props;
     return (
       <div className="Pokecard">
-        <h1>{pokemon.name}</h1>
+        <p className="Pokecard-name">{pokemon.name}</p>
         <img src={pokemon.imgSrc} alt={pokemon.name} />
         <p>Type: {pokemon.type}</p>
-        <p>Attack: {pokemon.attack}</p>
-        <p>Hp: {pokemon.hp}</p>
+        <p className="Pokecard-stat">
+          Attack: <span>{pokemon.attack}</span>
+        </p>
+        <p className="Pokecard-stat">
+          Hp: <span>{pokemon.hp}</span>
+        </p>
       </div>
     );
   }
