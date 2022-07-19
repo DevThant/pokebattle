@@ -1,0 +1,17 @@
+.Pokecard {
+    border: 2px solid #757373;
+    border-radius: 5px;
+    background-color: #757373;
+    width: 350px;
+    height: auto;
+    margin: 20px;
+    color: aliceblue;
+}
+
+.Pokecard img {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
