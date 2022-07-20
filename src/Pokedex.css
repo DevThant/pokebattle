@@ -3,6 +3,7 @@
     height: 100%;
     position: relative;
     overflow: hidden;
+    text-align: center;
 
 }
 
@@ -12,6 +13,14 @@
     color: #fca311;
     font-weight: 700;
     letter-spacing: 0.1rem;
+}
+
+.Pokedex-p1 {
+    color: #3a86ff;
+}
+
+.Pokedex-p2 {
+    color: #ef233c;
 }
 
 .Pokedex-winner {
@@ -30,7 +39,8 @@
 .Pokedex-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px;
+
 }
