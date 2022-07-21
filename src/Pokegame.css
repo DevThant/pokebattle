@@ -1,0 +1,10 @@
+.Pokegame-hide {
+    display: none;
+}
+
+.Pokegame-header {
+    color: #fca311;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}

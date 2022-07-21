@@ -2,21 +2,20 @@ const chooseDeck = (pokemons) => {
   let deck = [];
   for (let i = 0; i < 4; i++) {
     let random = Math.floor(Math.random() * pokemons.length);
-    deck.push(pokemons[random]);
-    pokemons.splice(random, 1);
+    // do not push the same pokemon twice
+    if (deck.includes(pokemons[random])) {
+      i--;
+    } else {
+      deck.push(pokemons[random]);
+    }
   }
-
   return deck;
 };
 
-const getTotalBP = (pokemons) => {
-  let total = 0;
-  // calculate attack and hp for each pokemon in the deck and add them to total
-  for (let i = 0; i < pokemons.length; i++) {
-    total += pokemons[i].attack + pokemons[i].hp;
-  }
-
-  return total;
+const getBP = (pokemons) => {
+  return pokemons.reduce((total, pokemon) => {
+    return total + pokemon.attack + pokemon.hp;
+  }, 0);
 };
 
-export { chooseDeck, getTotalBP };
+export { chooseDeck, getBP };
